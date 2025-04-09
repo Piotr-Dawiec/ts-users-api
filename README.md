@@ -29,7 +29,7 @@ Prosta aplikacja REST API w Laravel 12 realizująca operacje CRUD na użytkownik
 - E-maile:
   - nie są usuwane przy `delete` użytkownika
   - **nie mogą zostać ponownie użyte** (nawet po soft-delecie)
-  - są usuwane **wyłącznie podczas `update`**, jeśli znikną z listy
+  - są usuwane **wyłącznie podczas `update`**, jeśli znikną z listy maili użytkownika
 - Prosty **throttling 100 żądań/minutę/IP**
 
 ---
