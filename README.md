@@ -22,7 +22,8 @@ Prosta aplikacja REST API w Laravel 12 realizująca operacje CRUD na użytkownik
 - **Laravel 12**, REST API (`routes/api.php`)
 - JSON jako format komunikacji
 - W ramach projektu abstrahuje się od tego, do czego użytkownicy (User) mają być wykorzystywani – nie są definiowane żadne role, typy użytkowników, logowanie.
-- Unikalny musi być tylko email globalnie; imię i nazwisko oraz numer telefonu nie
+- Aplikacja nie implementuje uwierzytelniania (auth)
+- Unikalny musi być tylko email globalnie; Dla użytkowników imię i nazwisko oraz w szczególnośc numer telefonu nie muszą być unikalne.
 - Wysyłka maili obsługiwana przez **event `UserCreated`** i **listener `SendWelcomeEmails`**, asynchronicznie przez kolejkę
 - `User` korzysta z **soft deletes**
 - E-maile:
